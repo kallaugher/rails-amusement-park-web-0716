@@ -1,0 +1,2 @@
+<!-- <button onclick="location.href='/users/<%= @user.id %>'" id="Go on this ride">Go on this ride</button> -->
+<%= button_to "Go on #{@attraction.name}", user_path(@user) %>

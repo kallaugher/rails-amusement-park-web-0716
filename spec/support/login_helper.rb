@@ -29,6 +29,7 @@ module LoginHelper
       tickets: 10,
       height: 50
     )
+
     fill_in("user[name]", :with => "Mindy")
     fill_in("user[password]", :with => "password")
     click_button('Sign In')

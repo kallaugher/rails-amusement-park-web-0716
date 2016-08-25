@@ -1,0 +1,12 @@
+<p><b>Name: </b><%= @user.name %></p><br>
+
+<% if @user.admin %>
+  <p>ADMIN</p>
+<% else %>
+  <p><b>Tickets: </b><%= @user.tickets %></p><br>
+  <p><b>Mood: </b><%= @user.mood %></p><br>
+  <p><b>Height: </b><%= @user.height %> inches</p><br>
+<% end %>
+<%= link_to "Edit", edit_user_path(@user) %><br>
+<%= link_to "Log Out", '/signout' %><br>
+<%= link_to "See attractions", attractions_path %>
